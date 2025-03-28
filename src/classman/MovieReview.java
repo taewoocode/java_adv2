@@ -12,6 +12,19 @@ public class MovieReview {
 
 	public MovieReview() {}
 
+	public MovieReview changeName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	@Override
+	public String toString() {
+		return "MovieReview{" +
+			"name='" + name + '\'' +
+			", review='" + review + '\'' +
+			'}';
+	}
+
 	static class MovieReviewMain {
 		public static void main(String[] args) {
 			MovieReview inception = new MovieReview("인셉션", "인생은 무한 루프");
