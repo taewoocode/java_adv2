@@ -20,9 +20,11 @@ public class StreamStartMain1 {
 		System.out.println(fis.read());
 		System.out.println(fis.read());
 		System.out.println(fis.read());
+
+		int data;
+		while ((data = fis.read()) != -1) {
+			System.out.println(data);
+		}
 		fis.close();
-
-
-
 	}
 }
